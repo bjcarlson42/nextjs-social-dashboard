@@ -1,0 +1,9 @@
+.shadow-border {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-border:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.08);
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+}
