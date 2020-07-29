@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card'
 
 const StravaCardRuns = () => {
     const { data, error } = useSWR('/api/strava', fetcher)
-    const count = data?.count
+    const count = data?.count ?? '4,789'
     return (
         <div>
             <Card style={{ padding: '5px' }} className="shadow-border">

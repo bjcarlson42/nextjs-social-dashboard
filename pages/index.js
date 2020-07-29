@@ -63,6 +63,10 @@ export default function Home() {
             <br />  
           </Col>
         </Row>
+
+        <p className="text-center">These numbers are not accurate. This dashboard was for tutorial purposes only. If you are using this as your own dashboard and using your own API keys, it works.</p>
+        <p className="text-center">Ex: <code>const numProjects = data?.numProjects ?? 56</code></p>
+        <p className="text-center">The data is fetched as normal, but since the response is null, the '??' allows me to default to 56.</p>
       </div>
     </div>
   )

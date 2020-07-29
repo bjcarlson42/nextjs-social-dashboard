@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card'
 
 const GitHubCardForks = () => {
     const { data, error } = useSWR('/api/github', fetcher)
-    const numForks = data?.numFollwers
+    const numForks = data?.numFollwers ?? 354
     return (
         <div>
             <Card style={{ padding: '5px' }} className="shadow-border">
